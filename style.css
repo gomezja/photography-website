@@ -7,8 +7,15 @@
 
     box-sizing: border-box;
 
-    color: #595959;
-    background-color: #fefefe;
+    /* background-color: #fefefe; */
+}
+
+
+h1 {
+    font-size: 45px;
+    font-weight: 400;
+    color: #fefefe;
+    letter-spacing: 3px;
 }
 
 /**************************************
@@ -100,6 +107,11 @@
     color: #9c0c0c;
 } 
 
+.icon:hover,
+.active .icon {
+    color: #9c0c0c;
+}
+
 @media screen and (max-width: 700px) {
     .nav-container {
         flex-direction: column;
@@ -139,7 +151,7 @@
 }
 
 .dropdown-content a {
-
+    color: #595959;
     padding: 12px 16px;
     text-decoration: none;
     letter-spacing: 1.5px;
@@ -162,5 +174,19 @@
 }
 
 /******************************************
-/* 
+/* HOMEPAGE HERO IMAGE
 ******************************************/
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("images/mountains_img.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 500px;
+    text-align: center
+}
