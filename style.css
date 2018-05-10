@@ -16,6 +16,8 @@ html, body {
 
 h1 {
     font-size: 45px;
+    /* font-size: 3.52vw; */
+    /* font-size: 3.52vh; */
     font-weight: 400;
     color: #fefefe;
     letter-spacing: 3px;
@@ -185,7 +187,9 @@ h1 {
 
 .hero-img {
     position: relative;
+
     text-align: center;
+
     width: 100%;
     height: calc(100% - 80px);
 }
@@ -193,7 +197,101 @@ h1 {
 img {
     width: 100%;
     height: 100%;
+
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: center;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+
+    transform: translate(-50%, -50%);
+}
+
+.bottom {
+    position: absolute;
+    bottom: 25px;
+
+    transform: translate(-50%, -50%);
+}
+
+/******************************************
+/* CAROUSEL INDICATOR
+******************************************/
+.carousel-indicator {
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    border: 1.5px solid #fefefe;
+}
+
+.indicator-center {
+    left: 50%;
+}
+
+.indicator-right {
+    left: calc(50% + 30px);
+}
+
+.indicator-left {
+    left: calc(50% + -30px);
+}
+
+.current-indicator {
+    background-color: #fefefe;
+}
+
+.carousel-indicator:hover {
+    cursor: pointer;
+}
+
+/******************************************
+/* ARROWS
+******************************************/
+.arrow {
+    color: #fefefe;
+    font-size: 40px;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translate(-50%, -50%);
+}
+
+.left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%, -50%);
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .arrow {
+        font-size: 22px;
+    }
+
+    .left-arrow {
+        top: auto;
+        bottom: 18px;
+    }
+
+    .right-arrow {
+        top: auto;
+        bottom: 18px;
+    }
 }
