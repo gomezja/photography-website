@@ -318,7 +318,8 @@ img {
 /******************************************
 /* SECTION
 ******************************************/
-.section {
+.section, 
+.footer {
     /* background: red; */
     padding: 5% 0;
 }
@@ -419,4 +420,126 @@ img {
 
     box-shadow: 0px 0px 5px rgba(50,50,93,0.5),
     0px 0px 1px rgba(0,0,0,0.3);
+}
+
+/******************************************
+/* FOOTER
+******************************************/
+.footer {
+    box-shadow: inset 0 3px 0 0 #9c0c0c;
+}
+
+.col-company,
+.col-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-company {
+    flex: 1;
+    /* background: blue; */
+}
+
+.col-links {
+    flex: 1;
+    /* background: red; */
+}
+
+.footer-content > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-content a:hover {
+    color: #9c0c0c;
+    text-decoration: underline;
+}
+
+.footer-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* all text */
+.copyright p,
+.author p,
+.free,
+.company-info > *,
+.sub {    
+    font-size: 14px;
+    color: #cc5757;
+}
+
+.col-company a,
+.col-links a {
+    text-decoration: none;
+}
+
+/* main links */
+.main {
+    font-size: 16px;
+    color: #595959;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 690px) {
+    .col-company {
+        flex: 100%;
+    }
+
+    .col-links {
+        flex: 50%;
+    }
+
+    .col-company {
+        margin-bottom: 24px;
+    }
+}
+
+/******************************************
+/* FOOTER ENDER
+******************************************/
+.copyright,
+.author,
+.social-media,
+.social-app {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer-closure {
+    margin-top: 24px;
+    box-shadow: inset 0 2px 0 0 #cc5757;
+}
+
+/******************************************
+/* SOCIAL MEDIA ICONS
+******************************************/
+.social-media a {
+    font-size: 14px;
+    color: #fefefe;
+}
+
+.social-media a:hover {
+    color: #9c0c0c;
+}
+
+.circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background-color: #cc5757;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 645px) {
+    .social-media {
+        flex: 100%;
+    }
 }
