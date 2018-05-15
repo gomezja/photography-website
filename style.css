@@ -215,11 +215,15 @@ p {
 
 img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: center;
+}
+
+.img-slides {
+    height: 100%;
 }
 
 .center {
@@ -541,5 +545,33 @@ img {
 @media screen and (max-width: 645px) {
     .social-media {
         flex: 100%;
+    }
+}
+
+/******************************************
+/* IMAGE GALLERY
+******************************************/
+
+.col-gallery {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 8px;
+}
+
+.col-gallery img {
+    padding-top: 8px;
+}
+
+@media screen and (max-width: 900px) {
+    .col-gallery {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .col-gallery {
+        flex: 100%;
+        max-width: 100%;
     }
 }
