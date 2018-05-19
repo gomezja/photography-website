@@ -74,7 +74,7 @@ h6 {
     letter-spacing: 0.8px;
 }
 
-.col-skills :not(:last-child) {
+.col-qualifications :not(:last-child) {
     margin-bottom: 4px;
 }
 
@@ -373,7 +373,6 @@ img {
 ******************************************/
 .section, 
 .footer {
-    /* background: red; */
     padding: 5% 0;
 }
 
@@ -384,11 +383,10 @@ img {
 .row {
     display: flex;
     flex-wrap: wrap;
-    /* padding: 8px 0; */
     margin: 0 8.33%;
 }
 
-.row-c {
+.row-skills {
     display: flex;
     flex-wrap: wrap;
     margin: 24px;
@@ -402,7 +400,7 @@ img {
     flex: 1;
 }
 
-.col-6 {
+.col-6, .col-skills {
     flex: 6;
 }
 
@@ -427,7 +425,8 @@ img {
         flex: 100%;
     }
 
-    .col-6:first-child {
+    .col-6:first-child,
+    .col-skills:first-child {
         margin-bottom: 24px;
     }
 }
@@ -668,7 +667,7 @@ img {
     0px 0px 1px rgba(0,0,0,0.1);
 }
 
-.col-skills {
+.col-qualifications {
     flex: 6;
 }
 
@@ -680,11 +679,11 @@ img {
         margin: 0 auto;
     }
 
-    .col-skills {
+    .col-qualifications {
         flex: 100%;
     }
 
-    .col-skills:not(:first-of-type) {
+    .col-qualifications:not(:first-of-type) {
         margin-top: 24px;
     }
 }
