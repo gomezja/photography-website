@@ -429,6 +429,10 @@ img {
     .col-skills:first-child {
         margin-bottom: 24px;
     }
+
+    .col-6 .info {
+        margin-top: 24px;
+    }
 }
 
 /******************************************
@@ -688,3 +692,6 @@ img {
     }
 }
 
+.col-6 .info {
+    margin-bottom: 24px;
+}
