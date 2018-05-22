@@ -42,8 +42,18 @@ h3 {
     letter-spacing: 2px;
 
     border-bottom: 3px solid #9c0c0c;
+    line-height: 0.1em;
     margin: 48px 0;
     width: 100%;
+}
+
+h3 span {
+    background: #fefefe;
+    padding: 0 10px;
+
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
 /* about quote */
@@ -567,7 +577,7 @@ img {
         margin-bottom: 24px;
     }
 
-    h3 {
+    h3 span {
         font-size: 22px;
     }
 }
