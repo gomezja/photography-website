@@ -48,7 +48,7 @@ h3 {
 }
 
 h3 span {
-    background: #fefefe;
+    background: #ffffff;
     padding: 0 10px;
 
     font-size: 28px;
@@ -72,7 +72,7 @@ h5 {
     font-weight: 600;
     letter-spacing: 0.8px;
 
-    margin: 24px 24px 0 24px;
+    margin: 24px 24px 0 0px;
 }
 
 h6 {
@@ -390,10 +390,13 @@ img {
     padding: 0 0 5%;
 }
 
+.content {
+    margin: 0 8.33%;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 8.33%;
 }
 
 .row-skills {
@@ -435,8 +438,8 @@ img {
         flex: 100%;
     }
 
-    .col-6:first-child,
-    .col-skills:first-child {
+    .row > .col-6:not(:last-child),
+    .row > .col-skills:not(:last-child) {
         margin-bottom: 24px;
     }
 
@@ -704,4 +707,59 @@ img {
 
 .col-6 .info {
     margin-bottom: 24px;
+}
+
+/******************************************
+/* FORM, LABELS, INPUTS
+******************************************/
+label, input:not(#submit), textarea {
+    width: 100%;
+}
+
+label {
+    font-size: 16px;
+    color: #595959;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+input[type=text], 
+textarea {
+    border: 2px solid #e4e4e4;
+    border-radius: 3px;
+    height: 30px;
+    color: #cc5757;
+    padding: 3px;
+    font-size: 16px;
+    box-shadow: 0px 0px 5px rgba(50,50,93,0.07);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 30px;
+}
+
+#message {
+    height: 175px;
+}
+
+form > *:not(label) {
+    margin-bottom: 15px;
+}
+
+#submit {
+    background: #9c0c0c;
+    color: #fefefe;
+    font-size: 15px;
+    font-weight: 700;
+    border: 1.5px solid #b3aa9d;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+
+    position: relative;
+    top: -2px;
 }
