@@ -43,8 +43,8 @@ h3 {
 
     border-bottom: 3px solid #9c0c0c;
     line-height: 0.1em;
-    margin: 48px 0;
-    width: 100%;
+    margin: 48px auto;
+    max-width: 450px;
 }
 
 h3 span {
@@ -409,7 +409,7 @@ img {
     margin: 24px;
 }
 
-.col-1{
+.col-1, .col-12 {
     flex: 1;
 }
 
